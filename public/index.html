@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <title>Registro de Usuario</title>
+</head>
+<body class="bg-black min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-lg shadow-md w-full sm:w-96">
+    <h2 class="text-2xl font-semibold mb-4">Registro de Usuario</h2>
+    <form id="registration-form" >
+      <div class="mb-4">
+        <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+        <input type="text" id="nombre" name="nombre" class="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-indigo-200" required>
+      </div>
+      <div class="mb-4">
+        <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
+        <input type="text" id="apellido" name="apellido" class="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-indigo-200" required>
+      </div>
+      <div class="mb-4">
+        <label for="usuario" class="block text-sm font-medium text-gray-700">Usuario</label>
+        <input type="text" id="usuario" name="usuario" class="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-indigo-200" required>
+      </div>
+      <div class="mb-6">
+        <label for="contrasena" class="block text-sm font-medium text-gray-700">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" class="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-indigo-200" required>
+      </div>
+      <button type="submit" class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:ring focus:ring-indigo-200">Registrar</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+  <script src="index.js"></script>
+</body>
+</html>
